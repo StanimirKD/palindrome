@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/pages/home_page/widgets/background.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,7 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        //Background,
+        const Background(),
         SafeArea(
           child: SingleChildScrollView(
             padding: EdgeInsets.all(20),
