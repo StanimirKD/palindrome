@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/constants.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/background.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/header_bar.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/history_header.dart';
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
         const Background(),
         SafeArea(
           child: SingleChildScrollView(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(edgePadding),
             child: Column(
               children: const [
                 HeaderBar(),

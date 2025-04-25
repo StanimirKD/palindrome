@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/constants.dart';
 
 class Background extends StatelessWidget {
   const Background({super.key});
@@ -8,10 +9,7 @@ class Background extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 13, 106, 150),
-            Color.fromARGB(255, 7, 34, 56),
-          ],
+          colors: [lightBlue, nightBlue],
           begin: Alignment.topCenter,
           end: Alignment.bottomRight,
         ),

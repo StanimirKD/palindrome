@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/constants.dart';
 
 class HeaderBar extends StatelessWidget {
   const HeaderBar({super.key});
@@ -14,7 +15,7 @@ class HeaderBar extends StatelessWidget {
           'Palindrome Checker',
           style: theme.textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: nearlyWhite,
           ),
         ),
       ),

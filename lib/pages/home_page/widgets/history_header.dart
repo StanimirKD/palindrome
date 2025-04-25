@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/constants.dart';
 import 'package:palindrome_assignment/cubits/palindrome_cubit.dart';
 
 class HistoryHeader extends StatelessWidget {
@@ -19,7 +20,7 @@ class HistoryHeader extends StatelessWidget {
             child: Text(
               'History',
               style: theme.textTheme.titleLarge?.copyWith(
-                color: Colors.white,
+                color: nearlyWhite,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -28,7 +29,7 @@ class HistoryHeader extends StatelessWidget {
         Flexible(
           child: IconButton(
             onPressed: palindromeCubit.clearHistory,
-            icon: Icon(Icons.delete, color: Colors.white),
+            icon: Icon(Icons.delete, color: nearlyWhite),
           ),
         ),
       ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:palindrome_assignment/constants.dart';
 import 'package:palindrome_assignment/cubits/palindrome_cubit.dart';
 
 class PalindromeHistoryList extends StatelessWidget {
@@ -10,7 +11,7 @@ class PalindromeHistoryList extends StatelessWidget {
     return BlocBuilder<PalindromeCubit, PalindromeState>(
       builder: (context, state) {
         if (state.history.isEmpty) {
-          return Text('No history yet.', style: TextStyle(color: Colors.white));
+          return Text('No history yet.', style: TextStyle(color: offWhite));
         }
         return ListView.builder(
           shrinkWrap: true,
@@ -25,7 +26,7 @@ class PalindromeHistoryList extends StatelessWidget {
                 title: Text(item.input, overflow: TextOverflow.ellipsis),
                 trailing: Icon(
                   item.isPalindrome ? Icons.check : Icons.close,
-                  color: item.isPalindrome ? Colors.green : Colors.red,
+                  color: item.isPalindrome ? green : red,
                 ),
               ),
             );

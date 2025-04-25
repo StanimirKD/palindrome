@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:palindrome_assignment/constants.dart';
 import 'package:palindrome_assignment/cubits/palindrome_cubit.dart';
 
 class PalindromeResultText extends StatelessWidget {
@@ -14,7 +15,7 @@ class PalindromeResultText extends StatelessWidget {
         return Text(
           //Marking result message as non-nullable as I have that check above
           state.resultMessage,
-          style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
+          style: theme.textTheme.bodyMedium?.copyWith(color: nearlyWhite),
         );
       },
     );

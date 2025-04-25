@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palindrome_assignment/constants.dart';
 import 'package:palindrome_assignment/cubits/palindrome_cubit.dart';
 
 //using a stateful widget to avoid memory leaks related to the text editting
@@ -35,7 +36,7 @@ class _PalindromeInputState extends State<PalindromeInput> {
           controller: _controller,
           decoration: InputDecoration(
             filled: true,
-            fillColor: Colors.white,
+            fillColor: nearlyWhite,
             hintText: 'Enter a word or phrase',
             border: OutlineInputBorder(),
           ),
@@ -52,7 +53,7 @@ class _PalindromeInputState extends State<PalindromeInput> {
           child: FittedBox(
             child: Text(
               'Check',
-              style: theme.textTheme.bodyMedium?.copyWith(color: Colors.black),
+              style: theme.textTheme.bodyMedium?.copyWith(color: nearlyBlack),
             ),
           ),
         ),
