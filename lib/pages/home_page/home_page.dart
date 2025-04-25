@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/background.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/header_bar.dart';
+import 'package:palindrome_assignment/pages/home_page/widgets/history_header.dart';
+import 'package:palindrome_assignment/pages/home_page/widgets/palindrome_history.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/palindrome_input.dart';
 import 'package:palindrome_assignment/pages/home_page/widgets/palindrome_result.dart';
 
@@ -22,6 +24,10 @@ class HomePage extends StatelessWidget {
                 PalindromeInput(),
                 SizedBox(height: 20),
                 PalindromeResultText(),
+                SizedBox(height: 20),
+                HistoryHeader(),
+                SizedBox(height: 20),
+                PalindromeHistoryList(),
               ],
             ),
           ),
