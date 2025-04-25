@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:palindrome_assignment/cubits/palindrome_cubit.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const PalindromeApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class PalindromeApp extends StatelessWidget {
+  const PalindromeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return BlocProvider<PalindromeCubit>(
+      create: (_) => palindromeCubit,
+      child: MaterialApp(
+        title: 'Palindrome Checker',
+        home: const Material(child: SizedBox()),
       ),
     );
   }
